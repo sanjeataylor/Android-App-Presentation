@@ -1,79 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#E2C093"
-    android:orientation="vertical">
+# StockCheck – Project Outline
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:background="#C40000"
-        android:gravity="center"
-        android:text="STOCKCHECK"
-        android:textColor="#0B0808"
-        android:textSize="40sp"
-        android:textStyle="bold" />
+## Project Description
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="52dp"
-        android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:text="Login Here"
-        android:textSize="28sp"
-        android:textStyle="bold|italic" />
+StockCheck is an Android-based mobile application designed to improve inventory management by providing accurate and accessible real-time stock tracking. Many businesses rely on manual inventory checks or outdated systems that can cause confusion between recorded inventory and what is physically available. StockCheck aims to simplify this process by providing employees and managers with a mobile tool that allows them to scan items, view inventory lists, generate reports, and receive alerts when stock levels change. The application focuses on creating a system that can be used directly on the work floor. By providing an easy-to-navigate mobile interface, employees can quickly check items, update stock levels, and verify inventory while working in warehouses, retail stores, or storage areas. Additional improvements such as profile customization, picture uploads, and quick navigation options help create a more complete application that feels practical for real workplace environments rather than only a basic concept.
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="40dp"
-        android:text="Username: "
-        android:textSize="20sp" />
+## Problem Addressing
 
-    <EditText
-        android:id="@+id/editTextText2"
-        android:layout_width="344dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:background="#DDDDDD"
-        android:ems="10"
-        android:hint="Enter Username or Email"
-        android:inputType="text" />
+Inventory discrepancies are a common problem across many businesses. Systems may indicate that items are available in stock even though the physical items cannot be located. These issues often occur due to manual entry errors, delayed updates, or lack of real-time inventory tracking. When businesses experience these discrepancies, it can lead to incorrect orders, operational delays, lost revenue, and customer dissatisfaction. StockCheck addresses this issue by allowing employees to quickly scan items and immediately verify inventory information within the system. Real-time updates help reduce mismatches between recorded and actual stock levels. Features such as alerts and reports also help management identify inventory issues before they become larger operational problems. By improving visibility and simplifying the process of checking inventory, the application helps businesses maintain more accurate and reliable stock records.
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:text="Password: "
-        android:textSize="20sp" />
+## Platform
 
-    <EditText
-        android:id="@+id/editTextTextPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:background="#DDDDDD"
-        android:ems="10"
-        android:hint="Enter Password"
-        android:inputType="textPassword" />
+StockCheck is designed primarily for Android mobile devices. Android devices are commonly used in workplaces and provide flexibility for businesses that need affordable and portable technology solutions. Mobile devices allow employees to carry inventory management tools directly to the warehouse floor, retail aisles, or storage areas where stock checks are performed. The Android platform also allows the application to take advantage of built-in hardware such as device cameras, which are used for scanning barcodes or capturing images of products. This allows inventory verification to happen instantly without requiring separate scanning equipment. The mobile-first design ensures that inventory management tasks can be completed quickly and efficiently in real work environments.
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="50dp"
-        android:background="#BEBEBE"
-        android:text="LOGIN"
-        android:textSize="22sp" />
+## Front-End / Back-End Support
 
-</LinearLayout>
+The front-end of the StockCheck application is built using Android Studio and XML layout files. These layouts define the structure and appearance of the interface, including the login screen, dashboard menu, inventory lists, scanning screens, and settings pages. The design focuses on clear navigation and large interface elements so employees can easily access features such as scanning items, viewing reports, or checking alerts. The back-end of the system is intended to use cloud-based services such as Firebase to store and synchronize inventory data. The database stores information including item records, user accounts, inventory history, and system alerts. APIs allow the front-end application to retrieve and update this data in real time. This cloud-based approach allows multiple users and devices to access the same inventory information while maintaining consistency and data security.
+
+## Functionality
+
+StockCheck provides several key features designed to support efficient inventory management. The application begins with a login system where users enter their username or email and password to access the system. After logging in, the main dashboard provides quick navigation to important features including scanning items, viewing inventory lists, accessing reports, and checking alerts related to stock activity. The inventory list screen allows users to view and manage stored items through a searchable list interface. A search bar and filtering options allow employees to quickly locate specific products within large inventories. A button is also provided for adding new items to the system, allowing businesses to update their inventory records when new products arrive. The scanning feature allows items to be verified using the mobile device camera. The scanning screen displays a camera view area where barcodes or item images can be captured. This allows inventory updates to occur quickly without requiring manual item lookup. The ability to scan items directly through the mobile device helps reduce human error and improves the speed of inventory checks. Additional functionality exists within the settings section of the application. Users can manage account information, update personal details, and upload a profile picture for identification. A dedicated logout button is available to allow employees to quickly exit the system when devices are shared or shifts end. The settings area also includes access to social media links or company websites, providing additional connectivity beyond the main inventory functions.
+
+## Design 
+
+The design of StockCheck focuses on simplicity, accessibility, and clear organization of features. The interface uses structured layouts with large buttons and clearly labeled sections so employees can easily navigate the system even in fast-paced work environments. The main dashboard includes buttons for major functions such as scanning items, viewing inventory lists, generating reports, and checking alerts. The login screen provides a clean interface with labeled fields for username and password along with a login button. After logging in, the main dashboard provides access to the application’s core tools. The scanning screen includes a camera preview area and a scan button to capture item information quickly. The inventory screen includes a search bar, filter option, and item list display to help users manage large numbers of products. The settings page was designed to provide additional personalization and account management options. The interface includes buttons for uploading profile pictures, managing account information, viewing personal information, and accessing social media connections. These wireframes were originally designed using Figma and later implemented in Android Studio using XML layouts to create the visual structure of the application prototype.
