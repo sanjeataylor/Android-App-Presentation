@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EDEDED">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#C40000"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="StockCheck"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/uploadPictureBtn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="#E7C98A"
+        android:text="UPLOAD PICTURE"
+        android:textSize="28sp"
+        android:textColor="#000000"/>
+    
+    <Button
+        android:id="@+id/accountBtn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="#E7C98A"
+        android:text="ACCOUNT"
+        android:textSize="28sp"
+        android:textColor="#000000"/>
+    
+    <Button
+        android:id="@+id/personalInfoBtn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="#E7C98A"
+        android:text="PERSONAL INFO"
+        android:textSize="28sp"
+        android:textColor="#000000"/>
+    
+    <Button
+        android:id="@+id/socialMediaBtn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="#E7C98A"
+        android:text="SOCIAL MEDIA"
+        android:textSize="28sp"
+        android:textColor="#000000"/>
+    
+    <Button
+        android:id="@+id/logoutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="#E7C98A"
+        android:text="LOGOUT"
+        android:textSize="28sp"
+        android:textColor="#000000"/>
+
+</LinearLayout>
